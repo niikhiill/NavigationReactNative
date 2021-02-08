@@ -7,6 +7,8 @@ import HomeScreen from './ComponentScreen/HomeScreen';
 import DetailsScreen from './ComponentScreen/DetailsScreen';
 import CreatePostScreen from './ComponentScreen/CreatePostScreen';
 import TabScreen from './ComponentScreen/TabScreen';
+import DrawerScreen from './ComponentScreen/DrawerScreen';
+import PaginationScreen from "./ComponentScreen/PaginationScreen";
 
 
 const Stack = createStackNavigator();
@@ -49,7 +51,11 @@ function App() {
         <Stack.Screen name="Details" component={ DetailsScreen } initialParams={{ itemId: 42 }} 
                       options={({ route }) => ({ title: route.params.name })} />
 
-        <Stack.Screen name="Tab" component={TabScreen}/>              
+        <Stack.Screen name="Tab" component={TabScreen}/>         
+
+           <Stack.Screen name="Drawer" component={DrawerScreen}/>    
+
+              <Stack.Screen name="Pagination" component={PaginationScreen}/>     
 
       </Stack.Navigator>
     </NavigationContainer>

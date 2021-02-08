@@ -24,11 +24,22 @@ function HomeScreen({route, navigation}) {
           title="Tab Screen"
           onPress={() => navigation.navigate('Tab')}
         />
-      </View>
 
-  
+        <Button
+          title="Drawer Screen"
+          onPress={() => navigation.navigate('Drawer')}
+        />
 
-      
+
+        <Button
+          title="Pagination Screen"
+          onPress={() => navigation.navigate('Pagination')}
+        />
+
+
+
+
+      </View>     
     
     );
   }

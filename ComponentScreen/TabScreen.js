@@ -11,6 +11,7 @@ function ProfileScreen(){
         <Text>
             Welcome to profile screen
         </Text>
+        
     </View>
     )
 }
@@ -22,18 +23,21 @@ function SettingsScreen(){
         <Text>
             Welcome to settings screen
         </Text>
+       
     </View>
     )
 }
 
+
+
 function TabScreen(){
 return (
 
-     <Tab.Navigator>
-          <Tab.Screen name="profile" component= {ProfileScreen} options={{ tabBarBadge: 3 }} />
+     <Tab.Navigator initialRouteName = "profile">
+          <Tab.Screen name="profile" component= {ProfileScreen} />
           <Tab.Screen name="settings" component= {SettingsScreen} />
      </Tab.Navigator>
-
+     
 );
 }
 
